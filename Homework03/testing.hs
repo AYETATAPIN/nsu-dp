@@ -23,7 +23,7 @@ unique (first:others)
     | otherwise = unique others
 
 --task 2
-
+--bebra
 pythagoreanTriples :: Integral a => [(a, a, a)]
 pythagoreanTriples = [(x, y, z) | z <- [1 .. ], y <- [1 .. z] , x <- [1 .. y], x*x + y*y == z*z]
 
