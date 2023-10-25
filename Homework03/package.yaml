@@ -1,0 +1,38 @@
+name:                Homework03
+version:             0.1.0.0
+github:              "your-github-username/Homework03"
+author:              "Your Name"
+copyright:           "2023-2024 Your Name or your-github-username"
+
+extra-source-files:
+- README.md
+
+dependencies:
+- base >= 4.7 && < 5
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Widentities
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wmissing-export-lists
+- -Wmissing-home-modules
+- -Wpartial-fields
+- -Wredundant-constraints
+
+library:
+  source-dirs: source
+
+tests:
+  Homework03-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - Homework03
+    - hspec
+    - QuickCheck
